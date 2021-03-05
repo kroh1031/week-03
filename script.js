@@ -1,4 +1,4 @@
-// Assign variables to each character type
+// Assign characters to each corresponding variable
 var lowerCase = "qwertyuiopasdfghjklzxcvbnm";
 var upperCase = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var numbers = "1234567890";
@@ -7,6 +7,7 @@ var symbols = "!@#$%^&*(){}[]=<>/,."
 
 // Assignment Code (given)
 var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input (given)
 function writePassword() {
@@ -17,14 +18,20 @@ function writePassword() {
 
 }
 
+
+// Generate final password
 function generatePassword() {
   var finalPassword = "";
   var allowedCharacters = "";
 
-  //ask user for pw length 
+  //Ask user for password length 
   var passLength = prompt("How many characters would you like your password to contain?", "8");
-
-  if (passLength < 8) {
+// If length of password is less than 8 or greater than 128 return an alert
+if (isNaN(passLength)) {
+  alert("Please enter a number.")
+  return "";
+}  
+if (passLength < 8) {
     alert("Password length must be at least 8 characters.")
     return "";
   }
@@ -33,39 +40,40 @@ function generatePassword() {
     return "";
   }
   
-
-  //do you want to use lowercase?
+  //Ask user if lowercase characters are desired
   var passLower = confirm("Click OK to confirm including lowercase characters.")
-  //if yes
+  // If yes
   if (passLower === true) {
     allowedCharacters += lowerCase;
   }
-  //if no??
 
-  //  if user says no for all characters, make error msg pop up
-
-  //do you want Uppercase?
+  //Ask user if uppercase characters are desired
   var passUpper = confirm("Click OK to confirm including uppercase characters.")
-  //if yes
+  // If yes
   if (passUpper === true) {
     allowedCharacters += upperCase;
   }
-  // if no
 
-  // do you want numbers?
+  // Ask user if numbers are desired
   var passNumber = confirm("Click OK to confirm including numeric characters.")
-  // if yes
+  // If yes
   if (passNumber === true) {
     allowedCharacters += numbers;
   }
-  // if no
 
-  // do you want symbols?
+  // Ask user if symbols are desired
   var passSymbol = confirm("Click OK to confirm including special characters.")
-  // if yes
+  // If yes
   if (passSymbol === true) {
     allowedCharacters += symbols;
   }
+
+//  if user says no for all characters, make error msg pop up
+if (passUpper === false && passLower === false && passNumber === false && passSymbol === false) {
+  alert("Please select at least one character type.")
+  return "";
+}
+
 
 
   //length, allowedCharacters 'qwertyQWERTY123455'
@@ -80,18 +88,14 @@ function generatePassword() {
 
 
 
+
 // Add event listener to generate button (given)
 generateBtn.addEventListener("click", writePassword);
 
 
 
 
-// Prompts I need to include in my password generator:
-// length (how many characters in password)
-// special characters
-// numeric characters
-// lowercase characters
-// uppercase characters
+
 
 
 
