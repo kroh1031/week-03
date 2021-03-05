@@ -1,92 +1,58 @@
 # 03 JavaScript: Password Generator
 
-## Your Task
+## Description
+[My Website!](https://kroh1031.github.io/week-02/)  
+For this week's homework, I created a web application from scratch.  
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+To start off, I retrieved a template provided by w3schools.  
+Then, I made changes to it so that it'll create a layout in the way I wanted it to be.  
+Afterwards, I added content and styled the website using CSS to make it visually appealing.   
+I worked to make the code neater and added numerous comments so that I won't lose track in the process of building and styling elements. 
+I also included a favicon next to the title of my webpage to make it stand out from others. 
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+The purpose of building this project was to showcase my skills and talents to employers.
 
-## User Story
+One thing I learned for sure during this whole process is that things get much more complicated and difficult when starting off with an already existing code.  
+The reason behind this is that there's just so much going on in the code that I have not been made aware of. Therefore, it gets extremely confusing when it comes to things getting over-ridden each other.  
+From now on, even if I'd get stuck building a specific component, I'll make sure to utilize resources like frameworks, rather than relying on a template. 
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Installation
+The steps that I took in order to deploy my website:
+  1. First, I used the git add, git commit, and git push commands to save and push my code to my GitHub repository.
+  2. Then, I navigated into my GitHub repository's Settings tab.
+  3. From the settings page, I scrolled down to the GitHub Pages section and selected the master branch as my source.
+  4. After doing so, I was finally able to get the URL for my now deployed website. 
 
-## Acceptance Criteria
+## Usage
+To use my website, click on one of the links in the navigation bar that will direct you to the corresponding section.   
+When you click on the image in the section about my work, you will be directed to that deployed application.  
+Furthermore, you can click on one of the social media icons on the bottom of the page and it will navigate you to the webpage in another tab. 
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Screenshot of Portfolio:
 
-## Mock-Up
+![Screenshot of Portfolio](./Assets/screenshot-of-portfolio.png)
 
-The following image shows the web application's appearance and functionality:
+## Credits
+Credits to [w3schools.com](https://www.w3schools.com/) for providing me with an exceptional template and [freepik.com](https://www.freepik.com/) for allowing me to use their social media icons for free.  
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+## License
+MIT License
+Copyright (c) [2021] [Karen Roh]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Badges 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

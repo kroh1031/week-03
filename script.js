@@ -1,7 +1,8 @@
+// Assign variables to each character type
 var lowerCase = "qwertyuiopasdfghjklzxcvbnm";
 var upperCase = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var numbers = "1234567890";
-var symbols = "`~!@#$%^&*()_-+=[]"
+var symbols = "!@#$%^&*(){}[]=<>/,."
 
 
 // Assignment Code (given)
@@ -22,23 +23,26 @@ function generatePassword() {
 
   //ask user for pw length 
   var passLength = prompt("How many characters would you like your password to contain?", "8");
-  // if (passLength.length < 8) {
-  //   return null;
-  // } else if (passLength.length > 25) {
-  //   return null;
-  // } else {
-  //   return "";
-  // }
+
+  if (passLength < 8) {
+    alert("Password length must be at least 8 characters.")
+    return "";
+  }
+  else if (passLength > 128) {
+    alert("Password length must not be more than 128 characters.");
+    return "";
+  }
+  
 
   //do you want to use lowercase?
   var passLower = confirm("Click OK to confirm including lowercase characters.")
   //if yes
   if (passLower === true) {
-     allowedCharacters += lowerCase;
+    allowedCharacters += lowerCase;
   }
   //if no??
-  
- 
+
+  //  if user says no for all characters, make error msg pop up
 
   //do you want Uppercase?
   var passUpper = confirm("Click OK to confirm including uppercase characters.")
@@ -47,31 +51,30 @@ function generatePassword() {
     allowedCharacters += upperCase;
   }
   // if no
-  // allowedCharacters += upperCase;
 
   // do you want numbers?
-var passNumber = confirm("Click OK to confirm including numeric characters.")
-// if yes
-if (passNumber === true) {
-  allowedCharacters += numbers;
-}
-// if no
+  var passNumber = confirm("Click OK to confirm including numeric characters.")
+  // if yes
+  if (passNumber === true) {
+    allowedCharacters += numbers;
+  }
+  // if no
 
-// do you want symbols?
-var passSymbol = confirm("Click OK to confirm including special characters.")
-// if yes
-if (passSymbol === true) {
-  allowedCharacters += symbols;
-}
+  // do you want symbols?
+  var passSymbol = confirm("Click OK to confirm including special characters.")
+  // if yes
+  if (passSymbol === true) {
+    allowedCharacters += symbols;
+  }
 
 
-//length, allowedCharacters 'qwertyQWERTY123455'
-for (let i=0; i < passLength; i++) {
-  var randomIndex = Math.floor(Math.random() * allowedCharacters.length);
-  
-  var randomCharacter = allowedCharacters[randomIndex];
-  finalPassword += randomCharacter
-}
+  //length, allowedCharacters 'qwertyQWERTY123455'
+  for (let i = 0; i < passLength; i++) {
+    var randomIndex = Math.floor(Math.random() * allowedCharacters.length);
+
+    var randomCharacter = allowedCharacters[randomIndex];
+    finalPassword += randomCharacter
+  }
   return finalPassword;
 }
 
@@ -89,5 +92,7 @@ generateBtn.addEventListener("click", writePassword);
 // numeric characters
 // lowercase characters
 // uppercase characters
+
+
 
 
