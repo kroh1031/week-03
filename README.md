@@ -19,9 +19,8 @@ The steps that I took in order to deploy my website:
   4. After doing so, I was finally able to get the URL for my now deployed website. 
 
 ## Usage
-To use my website, click the button to generate a password
-and select the length of the password and which criteria to include in the password.
-The length of the password can only be between 8 and 128 characters and at least one character type must be selected.
+To use my website, click the button to generate a password, select the length of the password, and which criteria to include in the password.
+The length of the password can only be between 8 and 128 characters and at least one character type must be selected.  
 When all prompts are answered, a password is generated that matches the selected criteria and the generated password will be written to the page.
 
 Screenshot of Password Generator:
