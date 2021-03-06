@@ -1,20 +1,15 @@
 # 03 JavaScript: Password Generator
 
 ## Description
-[My Website!](https://kroh1031.github.io/week-02/)  
-For this week's homework, I created a web application from scratch.  
+[My Password Generator Website!](https://kroh1031.github.io/week-03/)  
+For this week's homework, I created a password generator using JavaScript.  
+The purpose of building this project was to create a strong password that provides greater security to users.
 
-To start off, I retrieved a template provided by w3schools.  
-Then, I made changes to it so that it'll create a layout in the way I wanted it to be.  
-Afterwards, I added content and styled the website using CSS to make it visually appealing.   
-I worked to make the code neater and added numerous comments so that I won't lose track in the process of building and styling elements. 
-I also included a favicon next to the title of my webpage to make it stand out from others. 
+Before I started, I made sure I fully understood what the starter code was providing me with so I could add to it accordingly.  
+Then, I added a generatePassword function as this is where I'd be doing all my work.  
+Afterwards I added prompts, if else statements, and for loops to validate the input and generate a random password.   
 
-The purpose of building this project was to showcase my skills and talents to employers.
-
-One thing I learned for sure during this whole process is that things get much more complicated and difficult when starting off with an already existing code.  
-The reason behind this is that there's just so much going on in the code that I have not been made aware of. Therefore, it gets extremely confusing when it comes to things getting over-ridden each other.  
-From now on, even if I'd get stuck building a specific component, I'll make sure to utilize resources like frameworks, rather than relying on a template. 
+One thing I learned during this whole process is that you need to break everything down into baby steps in order for the website to function the way you want it to.
 
 ## Installation
 The steps that I took in order to deploy my website:
@@ -24,16 +19,19 @@ The steps that I took in order to deploy my website:
   4. After doing so, I was finally able to get the URL for my now deployed website. 
 
 ## Usage
-To use my website, click on one of the links in the navigation bar that will direct you to the corresponding section.   
-When you click on the image in the section about my work, you will be directed to that deployed application.  
-Furthermore, you can click on one of the social media icons on the bottom of the page and it will navigate you to the webpage in another tab. 
+To use my website, click the button to generate a password
+and select the length of the password and which criteria to include in the password.
+The length of the password can only be between 8 and 128 characters and at least one character type must be selected.
+When all prompts are answered, a password is generated that matches the selected criteria and the generated password will be written to the page.
 
-Screenshot of Portfolio:
+Screenshot of Password Generator:
 
-![Screenshot of Portfolio](./Assets/screenshot-of-portfolio.png)
+![Screenshot of Password Generator](./Assets/03-javascript-homework-demo.png)
 
 ## Credits
-Credits to [w3schools.com](https://www.w3schools.com/) for providing me with an exceptional template and [freepik.com](https://www.freepik.com/) for allowing me to use their social media icons for free.  
+Credits to Jude Clark for greatly contributing in helping me understand and work the code.  
+
+The YouTube tutorials I've watched to gain a better understanding of this concept are from [Traversy Media](https://www.youtube.com/watch?v=duNmhKgtcsI&t=292s) and [Web Dev Simplified](https://www.youtube.com/watch?v=iKo9pDKKHnc). 
 
 ## License
 MIT License
