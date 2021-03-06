@@ -25,7 +25,7 @@ When all prompts are answered, a password is generated that matches the selected
 
 Screenshot of Password Generator:
 
-![Screenshot of Password Generator](./Assets/03-javascript-homework-demo.png)
+![Screenshot of Password Generator](./03-javascript-homework-demo.png)
 
 ## Credits
 Credits to Jude Clark for greatly contributing in helping me understand and work the code.  
